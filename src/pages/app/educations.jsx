@@ -20,10 +20,10 @@ const education = [
 
 const Education = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md">
+    <div className="bg-white p-6 rounded-lg shadow-md bg-gradient-to-r from-purple-200 to-blue-100 text-white">
       <div className="space-y-6">
         {education.map((edu, index) => (
-          <div key={index} className="bg-gray-50 p-4 rounded-lg shadow">
+          <div key={index} className="bg-white text-purple-400 p-4 rounded-lg shadow ">
             <h3 className="text-xl font-semibold">{edu.degree}</h3>
             <p className="text-gray-600">{edu.institution}</p>
             <p className="text-gray-700 mt-2">{edu.description}</p>

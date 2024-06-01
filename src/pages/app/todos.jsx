@@ -38,12 +38,12 @@ const Todos = () => {
 
   return (
     <div>
-         <nav className="bg-gradient-to-r h-[70px] flex gap-x-2 items-center pl-5 from-blue-500 to-purple-600 sticky top-0">
-    <Link href={'/'}> <MdArrowBackIosNew className='text-[30px] text-white'/></Link>
-    <h1 className='mb-1 font-bold text-[19px] md:text-[25px] text-white'>React Todos Project</h1>
+         <nav className=" h-[70px] flex gap-x-2 items-center pl-5 bg-purple-300 text-white sticky top-0">
+    <Link href={'/'}> <MdArrowBackIosNew className='text-[30px]'/></Link>
+    <h1 className='mb-1 font-bold text-[19px] md:text-[25px] '>React Todos Project</h1>
   </nav>
         <div className="w-[90%] md:w-[50%] mx-auto mt-8 border border-gray-200 rounded p-6">
-      <h1 className="text-3xl font-semibold mb-4">Todo List</h1>
+      <h1 className="text-3xl text-gray-400 font-semibold mb-4">Todo List</h1>
       <div className="mb-4 flex">
         <input
           type="text"
@@ -53,7 +53,7 @@ const Todos = () => {
           onChange={(e) => setInputText(e.target.value)}
         />
         <button
-          className="bg-green-500 w-[20%] hover:bg-green-600 text-white px-3 py-1 rounded"
+          className="bg-purple-500 w-[20%] hover:bg-purple-600 text-white px-3 py-1 rounded"
           onClick={addTodo}
         >
           Add Todo
@@ -70,13 +70,13 @@ const Todos = () => {
             }`}>{todo.text}</span>
            <div className='space-x-3'>
            <button
-              className="bg-blue-500 text-white hover:bg-blue-300 px-3 py-1 rounded"
+              className="bg-purple-400 text-white hover:bg-blue-300 px-3 py-1 rounded"
               onClick={() => toggleTodo(todo.id)}
             >
              {todo.completed ? 'Un-Complete' : 'Complete' }
             </button>
             <button
-              className="bg-red-500 text-white hover:bg-red-300 px-3 py-1 rounded"
+              className="bg-red-400 text-white hover:bg-red-300 px-3 py-1 rounded"
               onClick={() => deleteTodo(todo.id)}
             >
               Delete

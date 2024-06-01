@@ -14,3 +14,17 @@ html {
   .sectionScrollInLg {
     scroll-margin-top: 0px;
   }
+  .parent:hover .child {
+    display: flex;
+    text-underline-offset: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .child {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .parent:hover .child {
+    opacity: 1;
+  }

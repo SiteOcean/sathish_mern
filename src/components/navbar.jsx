@@ -16,42 +16,48 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-purple-200 text-blue-500 sticky top-0">
+    <nav className="bg-purple-200 text-purple-500 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex w-full items-center justify-between">
             <div className="">
-              <Link href="/" className="text-blue-600 text-xl font-bold uppercase">
+              <Link href="/" className="text-purple-600 text-xl font-bold uppercase">
                 MERN Portfolio
               </Link>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <Link  href="#" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link  href="#" className="text-purple-600 hover:bg-purple-400 duration-150 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                 
                     About
                 
                 </Link>
-                <Link href="#education" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="#education" className="text-purple-600 hover:bg-purple-400 duration-150 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                   
                   Education
                   
                   </Link>
-                <Link href="#skills" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="#skills" className="text-purple-600 hover:bg-purple-400 duration-150 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                   
                     Skills
                   
                 </Link>
-                <Link href="#experiences" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="#experiences" className="text-purple-600 hover:bg-purple-400 duration-150 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                   
                 Experiences
                   
                   </Link>
-                <Link href="#projects" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link href="#projects" className="text-purple-600 hover:bg-purple-400 duration-150 hover:text-white px-3 py-2 rounded-md text-md font-medium">
                  
                     Projects
                 
                 </Link>
+
+                <Link href="#contact" className="text-purple-600 hover:bg-purple-400 duration-150 hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                 
+                 Contact
+             
+             </Link>
                
               </div>
             </div>
@@ -62,7 +68,7 @@ export default function Navbar() {
               onBlur={onButtonBlur}
               onClick={toggleMenu}
               type="button"
-              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-blue-400 duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-ptext-purple-400 duration-150 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -108,27 +114,27 @@ export default function Navbar() {
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         
-          <Link  href="#" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <Link  href="#" className="text-purple-700 hover:bg-ptext-purple-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 
                 About
             
             </Link>
-            <Link href="#education" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link href="#education" className="text-purple-500 hover:bg-ptext-purple-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               
               Education
               
               </Link>
-            <Link href="#skills" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link href="#skills" className="text-purple-500 hover:bg-ptext-purple-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               
                 Skills
               
             </Link>
-            <Link href="#experiences" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link href="#experiences" className="text-purple-500 hover:bg-ptext-purple-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               
             Experiences
               
               </Link>
-            <Link href="#projects" className="text-blue-500 hover:bg-blue-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+            <Link href="#projects" className="text-purple-500 hover:bg-ptext-purple-400 duration-150 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
              
                 Projects
             

@@ -14,7 +14,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-purple-200 text-blue-500 py-4 text-center px-3">
+    <footer className="bg-purple-200 text-purple-600 py-4 text-center px-3">
       <div className="container mx-auto flex justify-between">
         <p>Grateful for your visit to my portfolio. Thank You!</p>
         <p>{currentDateTime ? currentDateTime : 'Loading date and time...'}</p>

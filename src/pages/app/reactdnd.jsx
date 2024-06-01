@@ -55,21 +55,21 @@ const TodoListDnd = () => {
 
   return (
    <div>
-     <nav className="bg-gradient-to-r h-[70px] flex gap-x-2 items-center pl-5 from-blue-500 to-purple-600 sticky top-0">
+     <nav className="bg-purple-300 text-purple-500 h-[70px] flex gap-x-2 items-center pl-5 sticky top-0">
     <Link href={'/'}> <MdArrowBackIosNew className='text-[30px] text-white'/></Link>
     <h1 className='mb-1 font-bold text-[19px] md:text-[25px] text-white'>React Drag & Drop Project (DND)</h1>
   </nav>
     <div className='min-h-[80vh] flex flex-col items-center justify-center'>
-    <h1 className='font-bold text-[25px] text-gray-400 underline underline-offset-2 mb-2'>React Drag & Drop</h1>
+    <h1 className='font-bold text-[25px] text-purple-500 underline underline-offset-2 mb-2'>React Drag & Drop</h1>
       <div className='grid grid-cols-2 w-[90%] md:w-[70%] mx-auto gap-x-3 '>
         <div ref={dropTodos} className='border-2 p-3 rounded space-y-2 relative min-h-[200px]'>
-{todos.length === 0 ? <span className='absolute top-[50%] text-gray-500 animate-pulse font-bold left-[40%]'>Drop Here</span> : null
+{todos.length === 0 ? <span className='absolute top-[50%] text-purple-500 animate-pulse font-bold left-[40%]'>Drop Here!</span> : null
 }          {todos.map((todo, index) => (
             <Box key={todo.id} item={todo} index={index} type={'box1'}/>
           ))}
         </div>
         <div ref={dropTaskTodos} className='border-2 rounded p-3 space-y-2 relative'>
-        {taskTodos.length === 0 ? <span className='absolute top-[50%] text-gray-500 animate-pulse font-bold left-[40%]'>Drop Here</span> : null
+        {taskTodos.length === 0 ? <span className='absolute top-[50%] text-purple-500 animate-pulse font-bold left-[40%]'>Drop Here!</span> : null
 }             {taskTodos.map((val,i)=>{
             return <Box key={val.id} item={val} index={i} type={'box2'}/>
           })}

@@ -14,7 +14,7 @@ const Boxs = ({item, index, type}) =>{
     }),
   )
   return (
-    <div ref={drag} className='border p-3 flex cursor-move justify-between rounded  bg-gray-100 text-gray-500 hover:bg-gray-200 duration-150'>
+    <div ref={drag} className='border p-3 flex cursor-move justify-between rounded  bg-purple-100 text-gray-500 hover:bg-gray-200 duration-150'>
     {item.text} <TbDragDrop className='animate-pulse'/>
    </div>
    
