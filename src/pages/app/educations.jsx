@@ -3,7 +3,7 @@ import React from 'react';
 const education = [
   {
     degree: 'Diploma in Electronics and Communication Engineering (DECE)',
-    institution: 'Your Institution Name',
+    institution: 'RVS Polytechnic College in Coimbatore',
     description: 'Completed with a focus on electronic circuits, microprocessors, and communication systems.',
   },
   {
