@@ -23,10 +23,11 @@ const experience = [
 
 const Experiences = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-200 to-blue-100 p-6 rounded-lg shadow-md">
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-delay="100" className="bg-gradient-to-r from-purple-200 to-blue-100 p-6 rounded-lg shadow-md">
       <div className="space-y-6">
         {experience.map((exp, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow">
+          <div key={index} className="bg-white p-4 rounded-lg shadow hover:scale-105 duration-700">
             <h3 className="text-xl font-semibold text-purple-400">{exp.role}</h3>
             <p className="text-gray-600">{exp.company}</p>
             <p className="text-gray-500">{exp.duration}</p>

@@ -1,5 +1,8 @@
 // components/ContactSection.js
 import React, { useState } from 'react';
+import { MdHome } from "react-icons/md";
+import { MdCall } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -25,8 +28,9 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="bg-gradient-to-r from-purple-100 to-blue-100 py-12 rounded-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 gap-x-6">
+    <section data-aos="fade-up"
+    data-aos-anchor-placement="top-center" data-aos-delay="100" className="bg-gradient-to-r w-full from-purple-100 to-blue-100 py-12 rounded-md">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-x-6">
        
         <div className="mt-3">
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -96,26 +100,26 @@ const ContactSection = () => {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full duration-300 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Submit
               </button>
             </div>
           </form>
         </div>
-        <div className="mt-3 bg-white p-8 rounded-lg shadow-lg">
+        <div className="mt-3 bg-white p-3 md:p-8 rounded-lg shadow-lg font-medium text-gray-400">
           <h3 className="text-2xl font-extrabold text-purple-500">Contact Information</h3>
-          <div className="mt-6">
-            <p className="text-lg font-medium text-gray-500">Address:</p>
-            <p className="mt-1 text-lg text-gray-600">Coimbatore, Tamilnadu, India</p>
+          <div className="mt-6 flex items-center gap-x-2">
+            <p className="text-lg font-medium text-gray-500"><MdHome/></p>
+            <p className="text-lg text-gray-600">Coimbatore, Tamilnadu, India</p>
           </div>
-          <div className="mt-6">
-            <p className="text-lg font-medium text-gray-500">Phone:</p>
-            <p className="mt-1 text-lg text-gray-600">+91 8122183129</p>
+          <div className="mt-6 flex items-center gap-x-2">
+            <p className="text-lg font-medium text-gray-500"><MdCall/></p>
+            <p className="text-lg text-gray-500 ">+91 8122183129</p>
           </div>
-          <div className="mt-6">
-            <p className="text-lg font-medium text-gray-500">Email:</p>
-            <p className="mt-1 text-lg text-blue-600 underline hover:text-blue-800">sathish5888@gmail.com</p>
+          <div className="mt-6 flex items-center gap-x-2">
+            <p className="text-lg font-medium text-gray-500"><MdEmail/></p>
+            <p className="text-lg text-blue-600 underline hover:text-blue-800">sathish5888@gmail.com</p>
           </div>
         </div>
       </div>
