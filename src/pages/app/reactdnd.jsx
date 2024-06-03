@@ -55,7 +55,7 @@ const TodoListDnd = () => {
 
   return (
    <div>
-     <nav className="bg-purple-300 text-purple-500 h-[70px] flex gap-x-2 items-center pl-5 sticky top-0">
+     <nav className="bg-purple-300 text-purple-600 h-[70px] flex gap-x-2 items-center pl-5 sticky top-0">
     <Link href={'/'}> <MdArrowBackIosNew className='text-[30px] text-white'/></Link>
     <h1 className='mb-1 font-bold text-[19px] md:text-[25px] text-white'>React Drag & Drop Project (DND)</h1>
   </nav>

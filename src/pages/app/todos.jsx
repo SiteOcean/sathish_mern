@@ -38,7 +38,7 @@ const Todos = () => {
 
   return (
     <div>
-         <nav className=" h-[70px] flex gap-x-2 items-center pl-5 bg-purple-300 text-white sticky top-0">
+         <nav className=" h-[70px] flex gap-x-2 items-center pl-5 bg-purple-300 text-purple-600 sticky top-0">
     <Link href={'/'}> <MdArrowBackIosNew className='text-[30px]'/></Link>
     <h1 className='mb-1 font-bold text-[19px] md:text-[25px] '>React Todos Project</h1>
   </nav>

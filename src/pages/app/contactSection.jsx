@@ -11,6 +11,7 @@ const ContactSection = () => {
     email: '',
     message: '',
   });
+  const [isError, setIsError]= useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,9 +23,28 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailtoLink = `mailto:your-email@example.com?subject=Contact%20Form%20Submission&body=First%20Name:%20${encodeURIComponent(formData.firstName)}%0ALast%20Name:%20${encodeURIComponent(formData.lastName)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AMessage:%20${encodeURIComponent(formData.message)}`;
+    if(formData.firstName === "" ){
+      setIsError("firstName")
+      return
+    }
+      else if(formData.lastName === ""){
+        setIsError("lastName")
+        return
+      } 
+      else if(formData.email === "" ){
+        setIsError("email")
+        return
+      } else if(formData.message === ""){
+        setIsError("message")
+        return
+      }
+      else{
+        const mailtoLink = `mailto:your-email@example.com?subject=Contact%20Form%20Submission&body=First%20Name:%20${encodeURIComponent(formData.firstName)}%0ALast%20Name:%20${encodeURIComponent(formData.lastName)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AMessage:%20${encodeURIComponent(formData.message)}`;
 
-    window.location.href = mailtoLink;
+        window.location.href = mailtoLink;
+      }
+    
+    
   };
 
   return (
@@ -36,7 +56,7 @@ const ContactSection = () => {
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
-                First Name
+                First Name <span className='text-[red] text-[12px]'>{isError && isError === "firstName" ? "* Fill FirstName" : null}</span>
               </label>
               <div className="mt-1">
                 <input
@@ -52,7 +72,7 @@ const ContactSection = () => {
             </div>
             <div>
               <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
-                Last Name
+                Last Name <span className='text-[red] text-[12px]'>{isError && isError === "lastName" ? "* Fill LastName" : null}</span>
               </label>
               <div className="mt-1">
                 <input
@@ -68,7 +88,7 @@ const ContactSection = () => {
             </div>
             <div className="sm:col-span-2">
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
+                Email <span className='text-[red] text-[12px]'>{isError && isError === "email" ? "* Fill Email" : null}</span>
               </label>
               <div className="mt-1">
                 <input
@@ -84,7 +104,7 @@ const ContactSection = () => {
             </div>
             <div className="sm:col-span-2">
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
+                Message <span className='text-[red] text-[12px]'>{isError && isError === "message" ? "* Fill Message" : null}</span>
               </label>
               <div className="mt-1">
                 <textarea

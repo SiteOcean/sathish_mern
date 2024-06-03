@@ -6,6 +6,10 @@
 html {
     scroll-behavior: smooth;
   }
+
+  .mern{
+    font-family: 'Courier New', Courier, monospace;
+  }
   
   .sectionScrollInSmall {
     scroll-margin-top: 80px;
