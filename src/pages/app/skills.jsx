@@ -7,7 +7,7 @@ const skills = [
   },
   {
     category: 'Frameworks & Libraries',
-    items: ['React', 'Next.js', 'Mobx', 'DND', 'Express'],
+    items: ['TailwindCss','React', 'Next.js', 'Redux', 'Mobx', 'DND', 'Express'],
   },
   {
     category: 'Tools & Technologies',

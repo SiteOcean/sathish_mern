@@ -5,8 +5,13 @@ import { createContext, useContext, useState } from 'react';
 const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
+
+  const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
 
+  const setEcomProducts = (items) =>{
+    setProducts(items)
+  }
   const addToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]);
     alert("Product Added Successfull")
@@ -17,7 +22,7 @@ export const CartProvider = ({ children }) => {
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{products, setEcomProducts, cart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );

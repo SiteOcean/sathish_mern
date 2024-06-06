@@ -14,7 +14,7 @@ const EcomSection = () => {
         <nav className=" h-[70px] flex gap-x-2 items-center justify-between px-5 bg-purple-300 text-white sticky top-0">
     <div className="flex items-center gap-x-2">
     <button onClick={()=>router.back()}> <MdArrowBackIosNew className='text-[30px]'/></button>
-    <h1 className='mb-1 font-bold text-[19px] md:text-[25px] '>React Ecom Project</h1>
+    <h1 className='mb-1 font-bold text-[19px] md:text-[25px] '>NextJS Ecom Project</h1>
     </div>
 
     <div>

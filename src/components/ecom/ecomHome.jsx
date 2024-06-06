@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react';
 import EcomProductCard from './productCard';
 import Loader from '../loader';
+import { CartData } from '../storeContext';
 
 
 const EcomHome = () => {
-  const [products, setProducts] = useState([]);
+  const {products, setEcomProducts} = CartData()
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const fetchProducts = async () => {
       try {
+        if(products.length > 0){
+          setLoading(false)
+          return
+        }
         const response = await fetch('https://fakestoreapi.com/products');
         let jsonResponse = await response.json()
-        setProducts(jsonResponse);
+        setEcomProducts(jsonResponse);
         setLoading(false);
       } catch (error) {
         console.error('Error fetching products:', error);
