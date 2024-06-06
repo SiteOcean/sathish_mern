@@ -5,7 +5,7 @@ const experience = [
     role: 'ReactJS Front End Developer',
     company: 'Zettastack in coimbatore',
     duration: '1 year',
-    description: 'Developed dynamic and interactive web applications using ReactJS, HTML, CSS, and JavaScript. Worked closely with designers to implement responsive and user-friendly interfaces.',
+    description: 'Developed dynamic and interactive web applications for a software automation project using Next.js, MobX, Tailwind CSS, and React Drag & Drop. Collaborated closely with designers to implement responsive and user-friendly interfaces.',
   },
   {
     role: 'MERN Stack Developer',

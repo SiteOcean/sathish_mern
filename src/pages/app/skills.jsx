@@ -7,7 +7,7 @@ const skills = [
   },
   {
     category: 'Frameworks & Libraries',
-    items: ['TailwindCss','React', 'Next.js', 'Redux', 'Mobx', 'DND', 'Express'],
+    items: ['TailwindCss','React', 'Next.js','Hooks', 'Redux', 'Mobx', 'DND', 'NodeJs', 'ExpressJs', 'Json', 'Jwt'],
   },
   {
     category: 'Tools & Technologies',
@@ -24,7 +24,7 @@ const Skills = () => {
           {skills.map((skillCategory, index) => (
             <div key={index} className="bg-white p-4 rounded-lg shadow hover:scale-105 duration-700">
               <h2 className="text-xl font-semibold mb-4 text-purple-400">{skillCategory.category}</h2>
-              <ul className="list-disc list-inside text-[#918d8d]">
+              <ul className="list-disc list-inside text-[#918d8d] grid grid-cols-2">
                 {skillCategory.items.map((skill, i) => (
                   <li key={i} className="font-medium">{skill}</li>
                 ))}

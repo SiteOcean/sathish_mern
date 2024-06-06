@@ -135,7 +135,7 @@ const ContactSection = () => {
           </div>
           <div className="mt-6 flex items-center gap-x-2">
             <p className="text-lg font-medium text-gray-500"><MdCall/></p>
-            <p className="text-lg text-gray-500 ">+91 9856535653</p>
+            <p className="text-lg text-gray-500 ">+91 8122183129</p>
           </div>
           <div className="mt-6 flex items-center gap-x-2">
             <p className="text-lg font-medium text-gray-500"><MdEmail/></p>

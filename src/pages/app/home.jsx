@@ -40,7 +40,7 @@ const handleRedirect = () => {
                 <h3 className="text-[20px] mern">MERN Stack developer</h3>
               </>
               <p className="text-[16px] text-gray-400 leading-relaxed font-semibold">
-                with 2.5 years of experience in designing, implementing, and maintaining robust web applications. Proven ability to translate complex business requirements into scalable and efficient technical solutions. Strong understanding of front-end and back-end development principles, with a passion for creating seamless user experiences. Skilled in developing dynamic web applications with real-time updates and interactive interfaces.
+                with 3 years of experience in designing, implementing, and maintaining robust web applications. Proven ability to translate complex business requirements into scalable and efficient technical solutions. Strong understanding of front-end and back-end development principles, with a passion for creating seamless user experiences. Skilled in developing dynamic web applications with real-time updates and interactive interfaces.
               </p>
             </div>
             <div className="flex-1 grid justify-center items-center" data-aos="flip-left">
