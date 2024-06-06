@@ -6,12 +6,7 @@ import { CartProvider } from "@/components/storeContext";
 export default function App({ Component, pageProps }) {
 
   useEffect(() => {
-    AOS.init({
-      // You can add global settings here, such as:
-      // duration: 1000,
-      // once: true,
-      // easing: 'ease-in-out',
-    });
+    AOS.init();
   }, []);
 
   return <CartProvider>

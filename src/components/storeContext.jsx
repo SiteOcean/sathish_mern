@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (product) => {
     setCart((prevCart) => [...prevCart, product]);
-    console.log(product+"cart")
+    alert("Product Added Successfull")
   };
 
   const removeFromCart = (productId) => {

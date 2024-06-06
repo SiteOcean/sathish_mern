@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { useState } from "react";
 import { MdStar } from "react-icons/md";
+import { CartData } from "../storeContext";
 
-const EcomProductCard = ({ product }) => {
+const EcomProductCard = ({ product, itemFrom }) => {
 
     const [readMore, setReadMore] = useState(false)
-
+    const { removeFromCart } = CartData();
 
     return (
         <div className="border shadow-sm border-purple-200 rounded-md space-y-1">
@@ -20,8 +21,8 @@ const EcomProductCard = ({ product }) => {
         <p className='flex items-center'><MdStar className="text-yellow-400 mr-1 text-[19px]"/> {product.rating.rate}</p>
         <p className="text-gray-500">Price : {product.price}</p>
         <div className="sm:flex space-y-3 mt-1 md:mt-0 items-center justify-between text-white font-bold">
-        <Link href={"/app/productCard?id="+product.id} className="border text-center hover:bg-gray-100 duration-300 border-purple-400 w-full text-purple-400 px-2 py-1 rounded">View</Link>
-        {/* <button className="border hidden sm:block border-green-400 text-green-400 p-2 rounded">Add To Cart</button> */}
+        {itemFrom ? <Link href={"/app/productCard?id="+product.id} className="border text-center hover:bg-gray-100 duration-300 border-purple-400 w-full text-purple-400 px-2 py-1 rounded">View</Link>
+        : <button onClick={()=>removeFromCart(product.id)} className="border hidden sm:block border-green-400 text-green-400 p-2 rounded">Remove From Cart</button>}
 
         </div>
 

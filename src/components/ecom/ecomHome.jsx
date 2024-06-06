@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import EcomProductCard from './productCard';
+import Loader from '../loader';
 
 
 const EcomHome = () => {
@@ -22,13 +23,13 @@ const EcomHome = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div><Loader/></div>;
   }
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
       {products.map((product,i) => {
-        return <EcomProductCard key={i} product={product}/>
+        return <EcomProductCard key={i} product={product} itemFrom={true}/>
 })}
     </div>
   );

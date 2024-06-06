@@ -11,14 +11,14 @@ const ProjectsSection=()=>{
           {/* Projects */}
          
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 p-6 shadow-md  bg-white rounded-md">
-            <Link href={'/app/todos'} className="rounded-md group shadow-md hover:scale-105 duration-500 relative">
-              {/* <span className='child absolute top-0 right-0 left-0 bottom-0 bg-gray-100 bg-opacity-75 flex justify-center items-center font-bold text-[19px]'>Click</span> */}
-              <img src={'/todos.jpg'} alt="img" width={100} height={100} className="w-full rounded-t-md h-[200px]" />
-              <p className='font-bold p-2 text-[19px] flex justify-between items-center group-hover:underline text-purple-600'>ToDos <FaArrowRight className=''/></p>
-            </Link>
+           
             <Link href={'/app/reactdnd'} className="rounded-md group shadow-md hover:scale-105 duration-500">
               <img src={'/social.png'}  quality={100} alt="img" className="w-full rounded-t-md h-[200px]" />
               <p className='font-bold p-2  text-[17px] flex justify-between items-center group-hover:underline text-purple-600'>React Drag & Drop <FaArrowRight className=''/></p>
+            </Link>
+            <Link href={'/app/ecomSection'} className="rounded-md group shadow-md hover:scale-105 duration-500">
+              <img src={'/ecom.jpg'}  quality={100} alt="img" className="w-full rounded-t-md h-[200px]" />
+              <p className='font-bold p-2  text-[17px] flex justify-between items-center group-hover:underline text-purple-600'>Ecommerce<FaArrowRight className=''/></p>
             </Link>
             <Link href={'https://www.hospiron.in/'} className="rounded-md group shadow-md hover:scale-105 duration-500">
               <img src={'/hospiron.png'} alt="img" width={100} height={100} className="w-full rounded-t-md h-[200px]" />
