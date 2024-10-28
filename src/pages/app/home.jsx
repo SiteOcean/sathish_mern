@@ -25,7 +25,7 @@ const handleRedirect = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="bg-purple-300 text-blue-500 min-h-screen p-2 space-y-8 relative">
+      <main className="bg-gradient-to-r from-purple-300 to-pink-300 text-blue-500 min-h-screen p-2 space-y-8 relative">
         <span onClick={handleRedirect} className='fixed cursor-pointer animate-bounce bottom-5 right-4 md:right-8 p-3 rounded-full bg-purple-400
         text-[30px] text-white z-50'><FaWhatsapp/></span>
         {/* Banner */}
@@ -33,7 +33,7 @@ const handleRedirect = () => {
           <div className="flex flex-col md:flex-row space-y-6 justify-center items-center">
             <div className="flex-1 space-y-1">
               <>
-                <h1 className="text-[30px] font-bold group uppercase duration-500 bg-gradient-to-r from-purple-400 to-blue-300 text-white p-3">Hi, I am <span className='group-hover:underline duration-300 group-hover:leading-snug'>SathishKumar R</span></h1>
+                <h1 className="text-[30px] font-bold group uppercase duration-500 bg-gradient-to-r from-purple-400 to-pink-200 text-white p-3">Hi, I am <span className='group-hover:underline duration-300 group-hover:leading-snug'>SathishKumar R</span></h1>
                 <h3 className="text-[20px] mern">MERN Stack developer</h3>
               </>
               <p className="text-[16px] text-gray-400 leading-relaxed font-semibold">
