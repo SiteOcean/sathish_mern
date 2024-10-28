@@ -1,13 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
 import Navbar from '@/components/navbar';
 import Skills from './skills';
 import Experiences from './experiences';
 import Education from './educations';
 import Footer from '@/components/footer';
-import { FaArrowRight } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import ProjectsSection from './projects';
 import ContactSection from './contactSection';
@@ -15,7 +12,7 @@ import ContactSection from './contactSection';
 export default function AppHome() {
 
 const handleRedirect = () => {
-  const whatsappURL = `https://wa.me/${8122183129}?text=${'Hi, Sathish '}`;
+  const whatsappURL = `https://wa.me/${9856535653}?text=${'Hi, Sathish '}`;
   window.location.href = whatsappURL;
 };
 
@@ -23,7 +20,7 @@ const handleRedirect = () => {
   return (
     <div>
       <Head>
-        <title>My Resume</title>
+        <title>Sathish MERN</title>
         <meta name="description" content="My professional resume" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

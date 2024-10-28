@@ -39,7 +39,7 @@ const ContactSection = () => {
         return
       }
       else{
-        const mailtoLink = `mailto:your-email@example.com?subject=Contact%20Form%20Submission&body=First%20Name:%20${encodeURIComponent(formData.firstName)}%0ALast%20Name:%20${encodeURIComponent(formData.lastName)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AMessage:%20${encodeURIComponent(formData.message)}`;
+        const mailtoLink = `mailto:sathish5888@gmail.com?subject=Contact%20Form%20Submission&body=First%20Name:%20${encodeURIComponent(formData.firstName)}%0ALast%20Name:%20${encodeURIComponent(formData.lastName)}%0AEmail:%20${encodeURIComponent(formData.email)}%0AMessage:%20${encodeURIComponent(formData.message)}`;
 
         window.location.href = mailtoLink;
       }
@@ -56,7 +56,7 @@ const ContactSection = () => {
           <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
             <div>
               <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
-                First Name <span className='text-[red] text-[12px]'>{isError && isError === "firstName" ? "* Fill FirstName" : null}</span>
+                First Name <span className='text-[#f17070] text-[12px]'>{isError && isError === "firstName" ? "* Fill FirstName" : null}</span>
               </label>
               <div className="mt-1">
                 <input
@@ -72,7 +72,7 @@ const ContactSection = () => {
             </div>
             <div>
               <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
-                Last Name <span className='text-[red] text-[12px]'>{isError && isError === "lastName" ? "* Fill LastName" : null}</span>
+                Last Name <span className='text-[#f17070] text-[12px]'>{isError && isError === "lastName" ? "* Fill LastName" : null}</span>
               </label>
               <div className="mt-1">
                 <input
@@ -88,7 +88,7 @@ const ContactSection = () => {
             </div>
             <div className="sm:col-span-2">
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email <span className='text-[red] text-[12px]'>{isError && isError === "email" ? "* Fill Email" : null}</span>
+                Email <span className='text-[#f17070] text-[12px]'>{isError && isError === "email" ? "* Fill Email" : null}</span>
               </label>
               <div className="mt-1">
                 <input
@@ -104,7 +104,7 @@ const ContactSection = () => {
             </div>
             <div className="sm:col-span-2">
               <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message <span className='text-[red] text-[12px]'>{isError && isError === "message" ? "* Fill Message" : null}</span>
+                Message <span className='text-[#f17070] text-[12px]'>{isError && isError === "message" ? "* Fill Message" : null}</span>
               </label>
               <div className="mt-1">
                 <textarea
@@ -135,7 +135,7 @@ const ContactSection = () => {
           </div>
           <div className="mt-6 flex items-center gap-x-2">
             <p className="text-lg font-medium text-gray-500"><MdCall/></p>
-            <p className="text-lg text-gray-500 ">+91 8122183129</p>
+            <p className="text-lg text-gray-500 ">+91 98-5653-5653</p>
           </div>
           <div className="mt-6 flex items-center gap-x-2">
             <p className="text-lg font-medium text-gray-500"><MdEmail/></p>
