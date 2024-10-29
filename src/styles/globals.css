@@ -32,3 +32,38 @@ html {
   .parent:hover .child {
     opacity: 1;
   }
+
+  .bgImg{
+    background-image: url('/heartines.gif');
+    background-size: "cover";
+    background-position: "center";
+    background-repeat: no-repeat;
+    
+  }
+  .liveYourDream{
+    background-image: url('/liveyourdream.gif');
+    background-size: "cover";
+    background-position: "center";
+    background-repeat: no-repeat;
+    
+  }
+  .pinkShots{
+    background-image: url('/pinkShots.gif');
+    background-size: "cover";
+    background-position: "center";
+    background-repeat: no-repeat;
+    
+  }
+  .bgCloud{
+    background-image: url('/bgCloudSpin.gif');
+    background-size: "cover";
+    
+    
+  }
+  .footerLotus{
+    background-image: url('/footerLotus.gif');
+    background-size: "cover";
+    background-repeat: inherit;
+    width: 50%;
+    
+  }

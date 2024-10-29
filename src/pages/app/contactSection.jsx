@@ -49,7 +49,7 @@ const ContactSection = () => {
 
   return (
     <section data-aos="fade-up"
-    data-aos-anchor-placement="top-center" data-aos-delay="100" className="bg-gradient-to-r w-full from-purple-100 to-blue-100 py-12 rounded-md">
+    data-aos-anchor-placement="top-center" data-aos-delay="100" className="bgCloud py-12 rounded-md w-full">
       <div className=" mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-x-6">
        
         <div className="mt-3">
@@ -127,7 +127,7 @@ const ContactSection = () => {
             </div>
           </form>
         </div>
-        <div className="mt-3 bg-white p-3 md:p-8 rounded-lg shadow-lg font-medium text-gray-400">
+        <div className="mt-3 bgImg p-3 md:p-8 rounded-lg shadow-lg font-medium text-gray-400">
           <h3 className="text-2xl font-extrabold text-purple-500">Contact Information</h3>
           <div className="mt-6 flex items-center gap-x-2">
             <p className="text-lg font-medium text-gray-500"><MdHome/></p>
