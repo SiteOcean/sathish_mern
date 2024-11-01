@@ -35,9 +35,7 @@ html {
 
   .bgImg{
     background-image: url('/heartines.gif');
-    background-size: "cover";
-    background-position: "center";
-    background-repeat: no-repeat;
+   
     
   }
   .liveYourDream{
@@ -67,3 +65,18 @@ html {
     width: 50%;
     
   }
+
+  .frame{
+    background-image: url('/frameOne.gif');
+    background-size: "cover";
+   
+  }
+
+  .scroll-hidden {
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}

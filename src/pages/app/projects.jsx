@@ -11,7 +11,11 @@ const ProjectsSection=()=>{
           {/* Projects */}
          
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 p-6 shadow-md  bg-white rounded-md">
-           
+          <Link href={'/dnd/homePage'} className="group rounded-md shadow-md hover:scale-105 duration-500">
+              <img src={'/website.png'} alt="img" width={100} height={100} className="w-full rounded-t-md h-[200px]" />
+              <p className='font-bold p-2  text-[19px] group-hover:underline flex justify-between items-center text-purple-600'>wordPress Clone <FaArrowRight className=''/></p>
+            </Link>
+            
             <Link href={'/app/reactdnd'} className="rounded-md group shadow-md hover:scale-105 duration-500">
               <img src={'/social.png'}  quality={100} alt="img" className="w-full rounded-t-md h-[200px]" />
               <p className='font-bold p-2  text-[17px] flex justify-between items-center group-hover:underline text-purple-600'>React Drag & Drop <FaArrowRight className=''/></p>
@@ -28,11 +32,8 @@ const ProjectsSection=()=>{
               <img src={'/siteocean.png'} alt="img" width={100} height={100} className="w-full rounded-t-md h-[200px]" />
               <p className='font-bold p-2  text-[19px] group-hover:underline flex justify-between items-center text-purple-600'>Website 2 <FaArrowRight className=''/></p>
             </Link>
-            <Link href={'https://kalai-mobiles.vercel.app/'} className="group rounded-md shadow-md hover:scale-105 duration-500">
-              <img src={'/website.png'} alt="img" width={100} height={100} className="w-full rounded-t-md h-[200px]" />
-              <p className='font-bold p-2  text-[19px] group-hover:underline flex justify-between items-center text-purple-600'>Website 3 <FaArrowRight className=''/></p>
-            </Link>
-            <Link href={'https://chat-app-steel-theta.vercel.app/'} className="group rounded-md shadow-md hover:scale-105 duration-500 ">
+           
+            <Link href={'/app/chatProject'} className="group rounded-md shadow-md hover:scale-105 duration-500 ">
               <img src={'/chat.jpg'} alt="img" width={100} height={100} className="w-full rounded-t-md h-[200px]" />
               <p className='font-bold p-2  text-[19px] flex group-hover:underline justify-between items-center text-purple-600 duration-500'>Chat App <FaArrowRight className=''/></p>
             </Link>
